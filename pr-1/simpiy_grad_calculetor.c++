@@ -9,19 +9,14 @@ int main()
     cout << "Enter your score: ";
     cin >> marks;
 
-    if (marks > 90 && marks <= 100)
-        grade = 'A';
-    else if (marks > 80 && marks <= 90)
-        grade = 'B';
-    else if (marks > 70 && marks <= 80)
-        grade = 'C';
-    else if (marks > 50 && marks <= 70)
-        grade = 'D';
-    else if (marks > 33 && marks <= 50)
-        grade = 'E';
-    else if (marks < 33)
-        grade = 'F';
-    else
+    grade = (marks > 90 && marks <= 100) ? 'A' :
+            (marks > 80 && marks <= 90) ? 'B' :
+            (marks > 70 && marks <= 80) ? 'C' :
+            (marks > 50 && marks <= 70) ? 'D' :
+            (marks > 33 && marks <= 50) ? 'E' :
+            (marks >= 0 && marks <= 33) ? 'F' : 'X';
+
+    if (grade == 'X')
     {
         cout << "Invalid score!" << endl;
         return 0;
