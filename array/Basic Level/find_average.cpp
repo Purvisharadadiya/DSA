@@ -17,6 +17,7 @@ main()
     cout << "Output array :-" << endl;
     for (int i = 0; i < size; i++)
     {
+        
         cout << a[i] << " ";
     }
     int sum = 0;
