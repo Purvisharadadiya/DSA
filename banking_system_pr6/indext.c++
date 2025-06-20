@@ -170,8 +170,7 @@ int main()
                     cout << "Account not found.\n";
             }
             break;
-
-        case 6:
+            case 6:
             cout << "Thank you for using our banking system!\n";
             break;
 
