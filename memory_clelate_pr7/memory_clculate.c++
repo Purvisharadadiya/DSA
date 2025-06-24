@@ -54,7 +54,7 @@ int main()
             cout << "Enter Student ID: ";
             cin >> id;
             cout << "Enter Name: ";
-            cin >> name; // You can improve this with getline() later
+            cin >> name; 
             Student<int> s;
             s.setStudent(id, name);
             students.push_back(s);
@@ -98,8 +98,8 @@ int main()
             {
                 if (students[i].getID() == id)
                 {
-                    students[i] = students.back(); // Swap with last
-                    students.pop_back();           // Remove last
+                    students[i] = students.back(); 
+                    students.pop_back();           
                     found = 1;
                     cout << "------------ Removed Successfully ------------" << endl;
                     break;
