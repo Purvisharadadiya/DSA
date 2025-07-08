@@ -20,7 +20,7 @@ public:
         delete[] arr;
     }
 
-    bool isFull()
+    bool Full()
     {
         return top == capacity - 1;
     }
@@ -32,7 +32,7 @@ public:
 
     void push(int value)
     {
-        if (isFull())
+        if (Full())
         {
             cout << "Stack Overflow! Cannot push " << value << endl;
         }
